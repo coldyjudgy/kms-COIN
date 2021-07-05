@@ -20,10 +20,11 @@ async function signTx(transport, type, index) {
       },
       {
         sender: "kms.testnet",
-        receiver: "receiver.testnet",
+        receiver: "kms.testnet",
         networkId: "testnet",
         amount: "1.4",
         isStake,
+        validator: "ed25519:DiogP36wBXKFpFeqirrxN8G2Mq9vnakgBvgnHdL9CcN3",
       }
     );
     console.log("response - ", response);
